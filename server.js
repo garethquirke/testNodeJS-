@@ -13,9 +13,10 @@ const server = http.createServer((req, res) => {
     res.end('Hello World\n');
 });
 server.listen(config.port, config.hostname, () => {
-    console.log('server is running at http://' + config.hostname + ':' + config.port + '/');
+
+    console.log('server is running at http://interactivemaths.westeurope.cloudapp.azure.com:8080/' + config.hostname + ':' + config.port + '/');
 });
 
 app.get('/', function (req, res) {
-    res.end('Hello World\n');
+    res.end('Interactive Maths server runs here\n');
 });
